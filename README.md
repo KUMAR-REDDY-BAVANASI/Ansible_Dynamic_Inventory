@@ -12,11 +12,13 @@ To get help on dynamic inventory please follow Ansible Official Document
 2. Create IAM Programmatic access user with EC2 full access on AWS console
 
     IAM --> users --> Add user
+    
     Role --> Ec2FullAccess --> Attach to Ansibe Server
 
 3. Export IAM user credentials on Ansible server.
 
-	export AWS_ACCESS_KEY_ID='1bc123'
+	export AWS_ACCESS_KEY_ID='1bc123'                       
+	
 	export AWS_SECRET_ACCESS_KEY='abc123'
 
 4. add executing permissions to ec2.py script
